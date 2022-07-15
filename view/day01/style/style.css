@@ -1,0 +1,743 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+@media (max-width: 480px) {
+  #container {
+    position: relative;
+    background: linear-gradient(180deg, rgba(184, 132, 132, 0.15) 42.22%, rgba(255, 194, 194, 0.114) 100%);
+  }
+  #container .containerImage {
+    width: 100vw;
+    height: 50vh;
+    position: absolute;
+    top: 0;
+    overflow: hidden;
+    border-radius: 0 0 25% 25%;
+    background-image: url("../assets/drew-coffman-EbivdbB83Y0-unsplash.jpg");
+    background-size: cover;
+  }
+  #container .containerImage img {
+    border-radius: 0 0 60% 60%;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  #container .containerForm {
+    width: 100vw;
+    height: 50vh;
+    position: absolute;
+    top: 50vh;
+  }
+  #container .containerForm .title {
+    font-family: "Aclonica", Arial, Helvetica, sans-serif;
+    font-size: 1.3rem;
+    text-align: center;
+    padding-top: 10%;
+    letter-spacing: 3px;
+  }
+  #container .containerForm .divIcon {
+    height: 3rem;
+    margin-top: 3%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  #container .containerForm .divIcon i {
+    font-size: 20px;
+    color: #982B15;
+  }
+  #container .containerForm .containerOr {
+    padding-top: 3%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  #container .containerForm .containerOr hr {
+    color: black;
+    width: 35%;
+    margin-right: 5px;
+    margin-left: 5px;
+  }
+  #container .containerForm .containerOr span {
+    font-family: "Aclonica", Arial, Helvetica, sans-serif;
+  }
+  #container .containerForm .containerInput {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5%;
+  }
+  #container .containerForm .containerInput input {
+    border: none;
+    height: 2.5rem;
+    width: 75%;
+    background: linear-gradient(180deg, rgba(233, 163, 148, 0.45) 0%, rgba(247, 171, 156, 0.315) 8.51%, rgba(225, 166, 154, 0.41) 100%);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 5px;
+    padding-left: 10px;
+  }
+  #container .containerForm .containerInput input:first-child {
+    margin-bottom: 5%;
+  }
+  #container .containerForm .containerInput input:focus {
+    border-color: #982B15;
+  }
+  #container .containerForm .containerInput .password {
+    text-decoration: none;
+    margin-top: 10px;
+    margin-right: 15%;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgba(0, 0, 0, 0.4);
+    font-size: 0.9rem;
+    align-self: flex-end;
+  }
+  #container .containerForm .containerInput .btn-login {
+    margin-top: 5%;
+    padding: 1.5% 9%;
+    border: none;
+    background: linear-gradient(180deg, #982B15 0%, rgba(152, 43, 21, 0.74) 85.94%, rgba(152, 43, 21, 0.83) 100%);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 24px;
+  }
+  #container .containerForm .containerInput .btn-login a {
+    color: whitesmoke;
+    font-family: "Acme", Arial, Helvetica, sans-serif;
+    letter-spacing: 5px;
+    font-size: 1rem;
+    text-decoration: none;
+  }
+  #container .containerForm .containerInput .SignIn {
+    margin-top: 3%;
+    text-decoration: none;
+    font-family: "Acme", Arial, Helvetica, sans-serif;
+    letter-spacing: 5px;
+    font-size: 0.9rem;
+    color: rgba(0, 0, 0, 0.4);
+  }
+  #container .containerForm .containerInput .SignIn:hover {
+    color: #982B15;
+  }
+  #containerSignUp {
+    position: relative;
+    background: linear-gradient(180deg, rgba(184, 132, 132, 0.15) 42.22%, rgba(255, 194, 194, 0.114) 100%);
+  }
+  #containerSignUp .containerImage {
+    width: 100vw;
+    height: 45vh;
+    position: absolute;
+    top: 0;
+    background-image: url("../assets/nathan-dumlao-VuqKP4WFkPU-unsplash.jpg");
+    background-size: cover;
+    overflow: hidden;
+    border-radius: 0 0 35% 35%;
+  }
+  #containerSignUp .containerImage img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 0 0 50% 50%;
+  }
+  #containerSignUp .containerForm {
+    width: 100vw;
+    height: 55vh;
+    position: absolute;
+    top: 45vh;
+  }
+  #containerSignUp .containerForm .title {
+    font-family: "Aclonica", Arial, Helvetica, sans-serif;
+    font-size: 1.3rem;
+    text-align: center;
+    padding-top: 8%;
+    letter-spacing: 3px;
+  }
+  #containerSignUp .containerForm .divIcon {
+    height: 3rem;
+    margin-top: 3%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  #containerSignUp .containerForm .divIcon i {
+    cursor: pointer;
+    font-size: 25px;
+    color: #982B15;
+  }
+  #containerSignUp .containerForm .containerOr {
+    padding-top: 3%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  #containerSignUp .containerForm .containerOr hr {
+    color: black;
+    width: 35%;
+    margin-right: 5px;
+    margin-left: 5px;
+  }
+  #containerSignUp .containerForm .containerOr span {
+    font-family: "Aclonica", Arial, Helvetica, sans-serif;
+  }
+  #containerSignUp .containerForm .containerInput {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5%;
+  }
+  #containerSignUp .containerForm .containerInput input {
+    border: none;
+    height: 2.5rem;
+    width: 70%;
+    background: linear-gradient(180deg, rgba(233, 163, 148, 0.45) 0%, rgba(247, 171, 156, 0.315) 8.51%, rgba(225, 166, 154, 0.41) 100%);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 5px;
+    padding-left: 10px;
+    margin-bottom: 5%;
+  }
+  #containerSignUp .containerForm .containerInput input:nth-child(3) {
+    margin-bottom: 0%;
+  }
+  #containerSignUp .containerForm .containerInput input:focus {
+    border-color: #982B15;
+  }
+  #containerSignUp .containerForm .containerInput .check {
+    margin-top: 3%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: baseline;
+    width: 70%;
+    margin-left: 0%;
+  }
+  #containerSignUp .containerForm .containerInput .check .checkbox {
+    width: 5%;
+    height: 5%;
+  }
+  #containerSignUp .containerForm .containerInput .check .terminos {
+    text-decoration: none;
+    margin-left: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgba(0, 0, 0, 0.4);
+    font-size: 0.9rem;
+  }
+  #containerSignUp .containerForm .containerInput .btn-login {
+    margin-top: 2%;
+    padding: 2% 9%;
+    border: none;
+    background: linear-gradient(180deg, #982B15 0%, rgba(152, 43, 21, 0.74) 85.94%, rgba(152, 43, 21, 0.83) 100%);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 24px;
+  }
+  #containerSignUp .containerForm .containerInput .btn-login a {
+    color: whitesmoke;
+    font-family: "Acme", Arial, Helvetica, sans-serif;
+    letter-spacing: 5px;
+    font-size: 1.2rem;
+    text-decoration: none;
+  }
+  #containerSignUp .containerForm .containerInput .SignIn {
+    margin-top: 3%;
+    text-decoration: none;
+    font-family: "Acme", Arial, Helvetica, sans-serif;
+    letter-spacing: 5px;
+    font-size: 1rem;
+    color: rgba(0, 0, 0, 0.4);
+  }
+  #containerSignUp .containerForm .containerInput .SignIn:hover {
+    color: #982B15;
+  }
+}
+@media (min-width: 481px) and (max-width: 1199px) {
+  #container {
+    position: relative;
+  }
+  #container .containerForm {
+    width: 60vw;
+    height: 100vh;
+    background: linear-gradient(180deg, rgba(184, 132, 132, 0.15) 42.22%, rgba(255, 194, 194, 0.114) 100%);
+  }
+  #container .containerForm .title {
+    font-family: "Aclonica", Arial, Helvetica, sans-serif;
+    font-size: 2.5rem;
+    text-align: center;
+    padding-top: 10%;
+    letter-spacing: 5px;
+  }
+  #container .containerForm .divIcon {
+    height: 3rem;
+    margin-top: 5%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  #container .containerForm .divIcon i {
+    font-size: 25px;
+    color: #982B15;
+  }
+  #container .containerForm .containerOr {
+    padding-top: 5%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  #container .containerForm .containerOr hr {
+    color: black;
+    width: 35%;
+    margin-right: 5px;
+    margin-left: 5px;
+  }
+  #container .containerForm .containerOr span {
+    font-family: "Aclonica", Arial, Helvetica, sans-serif;
+  }
+  #container .containerForm .containerInput {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10%;
+  }
+  #container .containerForm .containerInput input {
+    border: none;
+    height: 2.5rem;
+    width: 70%;
+    background: linear-gradient(180deg, rgba(233, 163, 148, 0.45) 0%, rgba(247, 171, 156, 0.315) 8.51%, rgba(225, 166, 154, 0.41) 100%);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 5px;
+    padding-left: 10px;
+  }
+  #container .containerForm .containerInput input:first-child {
+    margin-bottom: 5%;
+  }
+  #container .containerForm .containerInput input:focus {
+    border-color: #982B15;
+  }
+  #container .containerForm .containerInput .password {
+    text-decoration: none;
+    margin-top: 10px;
+    margin-right: 15%;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgba(0, 0, 0, 0.4);
+    font-size: 1rem;
+    align-self: flex-end;
+  }
+  #container .containerForm .containerInput .btn-login {
+    margin-top: 2%;
+    padding: 1% 5%;
+    border: none;
+    background: linear-gradient(180deg, #982B15 0%, rgba(152, 43, 21, 0.74) 85.94%, rgba(152, 43, 21, 0.83) 100%);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 24px;
+  }
+  #container .containerForm .containerInput .btn-login a {
+    color: whitesmoke;
+    font-family: "Acme", Arial, Helvetica, sans-serif;
+    letter-spacing: 5px;
+    font-size: 1.2rem;
+    text-decoration: none;
+  }
+  #container .containerForm .containerInput .SignIn {
+    margin-top: 3%;
+    text-decoration: none;
+    font-family: "Acme", Arial, Helvetica, sans-serif;
+    letter-spacing: 5px;
+    font-size: 1rem;
+    color: rgba(0, 0, 0, 0.4);
+  }
+  #container .containerForm .containerInput .SignIn:hover {
+    color: #982B15;
+  }
+  #container .containerImage {
+    width: 40vw;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-image: url("../assets/david-kovalenko-Spp6xNPcsgc-unsplash.jpg");
+    background-size: cover;
+  }
+  #container .containerImage img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  #containerSignUp {
+    position: relative;
+  }
+  #containerSignUp .containerForm {
+    width: 60vw;
+    height: 100vh;
+    background: linear-gradient(180deg, rgba(184, 132, 132, 0.15) 42.22%, rgba(255, 194, 194, 0.114) 100%);
+  }
+  #containerSignUp .containerForm .title {
+    font-family: "Aclonica", Arial, Helvetica, sans-serif;
+    font-size: 2.5rem;
+    text-align: center;
+    padding-top: 8%;
+    letter-spacing: 5px;
+  }
+  #containerSignUp .containerForm .divIcon {
+    height: 3rem;
+    margin-top: 3%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  #containerSignUp .containerForm .divIcon i {
+    cursor: pointer;
+    font-size: 25px;
+    color: #982B15;
+  }
+  #containerSignUp .containerForm .containerOr {
+    padding-top: 3%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  #containerSignUp .containerForm .containerOr hr {
+    color: black;
+    width: 35%;
+    margin-right: 5px;
+    margin-left: 5px;
+  }
+  #containerSignUp .containerForm .containerOr span {
+    font-family: "Aclonica", Arial, Helvetica, sans-serif;
+  }
+  #containerSignUp .containerForm .containerInput {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5%;
+  }
+  #containerSignUp .containerForm .containerInput input {
+    border: none;
+    height: 2.5rem;
+    width: 70%;
+    background: linear-gradient(180deg, rgba(233, 163, 148, 0.45) 0%, rgba(247, 171, 156, 0.315) 8.51%, rgba(225, 166, 154, 0.41) 100%);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 5px;
+    padding-left: 10px;
+    margin-bottom: 5%;
+  }
+  #containerSignUp .containerForm .containerInput input:nth-child(3) {
+    margin-bottom: 0%;
+  }
+  #containerSignUp .containerForm .containerInput input:focus {
+    border-color: #982B15;
+  }
+  #containerSignUp .containerForm .containerInput .check {
+    margin-top: 2%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: baseline;
+    width: 40%;
+    margin-left: -30%;
+  }
+  #containerSignUp .containerForm .containerInput .check .checkbox {
+    width: 6%;
+    height: 6%;
+  }
+  #containerSignUp .containerForm .containerInput .check .terminos {
+    text-decoration: none;
+    margin-left: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgba(0, 0, 0, 0.4);
+    font-size: 1rem;
+  }
+  #containerSignUp .containerForm .containerInput .btn-login {
+    margin-top: 2%;
+    padding: 1% 5%;
+    border: none;
+    background: linear-gradient(180deg, #982B15 0%, rgba(152, 43, 21, 0.74) 85.94%, rgba(152, 43, 21, 0.83) 100%);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 24px;
+  }
+  #containerSignUp .containerForm .containerInput .btn-login a {
+    color: whitesmoke;
+    font-family: "Acme", Arial, Helvetica, sans-serif;
+    letter-spacing: 5px;
+    font-size: 1.2rem;
+    text-decoration: none;
+  }
+  #containerSignUp .containerForm .containerInput .SignIn {
+    margin-top: 3%;
+    text-decoration: none;
+    font-family: "Acme", Arial, Helvetica, sans-serif;
+    letter-spacing: 5px;
+    font-size: 1rem;
+    color: rgba(0, 0, 0, 0.4);
+  }
+  #containerSignUp .containerForm .containerInput .SignIn:hover {
+    color: #982B15;
+  }
+  #containerSignUp .containerImage {
+    width: 40vw;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-image: url("../assets/evan-leith-8ZmwIbjOa9o-unsplash.jpg");
+    background-size: cover;
+    overflow: hidden;
+  }
+  #containerSignUp .containerImage img {
+    width: 100%;
+  }
+}
+@media (min-width: 1200px) {
+  #container {
+    position: relative;
+  }
+  #container .containerForm {
+    width: 60vw;
+    height: 100vh;
+    background: linear-gradient(180deg, rgba(184, 132, 132, 0.15) 42.22%, rgba(255, 194, 194, 0.114) 100%);
+  }
+  #container .containerForm .title {
+    font-family: "Aclonica", Arial, Helvetica, sans-serif;
+    font-size: 2.5rem;
+    text-align: center;
+    padding-top: 10%;
+    letter-spacing: 5px;
+  }
+  #container .containerForm .divIcon {
+    height: 3rem;
+    margin-top: 5%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  #container .containerForm .divIcon i {
+    font-size: 25px;
+    color: #982B15;
+  }
+  #container .containerForm .containerOr {
+    padding-top: 5%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  #container .containerForm .containerOr hr {
+    color: black;
+    width: 35%;
+    margin-right: 5px;
+    margin-left: 5px;
+  }
+  #container .containerForm .containerOr span {
+    font-family: "Aclonica", Arial, Helvetica, sans-serif;
+  }
+  #container .containerForm .containerInput {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10%;
+  }
+  #container .containerForm .containerInput input {
+    border: none;
+    height: 2.5rem;
+    width: 70%;
+    background: linear-gradient(180deg, rgba(233, 163, 148, 0.45) 0%, rgba(247, 171, 156, 0.315) 8.51%, rgba(225, 166, 154, 0.41) 100%);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 5px;
+    padding-left: 10px;
+  }
+  #container .containerForm .containerInput input:first-child {
+    margin-bottom: 5%;
+  }
+  #container .containerForm .containerInput input:focus {
+    border-color: #982B15;
+  }
+  #container .containerForm .containerInput .password {
+    text-decoration: none;
+    margin-top: 10px;
+    margin-right: 15%;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgba(0, 0, 0, 0.4);
+    font-size: 1rem;
+    align-self: flex-end;
+  }
+  #container .containerForm .containerInput .btn-login {
+    margin-top: 2%;
+    padding: 1% 5%;
+    border: none;
+    background: linear-gradient(180deg, #982B15 0%, rgba(152, 43, 21, 0.74) 85.94%, rgba(152, 43, 21, 0.83) 100%);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 24px;
+  }
+  #container .containerForm .containerInput .btn-login a {
+    color: whitesmoke;
+    font-family: "Acme", Arial, Helvetica, sans-serif;
+    letter-spacing: 5px;
+    font-size: 1.2rem;
+    text-decoration: none;
+  }
+  #container .containerForm .containerInput .SignIn {
+    margin-top: 3%;
+    text-decoration: none;
+    font-family: "Acme", Arial, Helvetica, sans-serif;
+    letter-spacing: 5px;
+    font-size: 1rem;
+    color: rgba(0, 0, 0, 0.4);
+  }
+  #container .containerForm .containerInput .SignIn:hover {
+    color: #982B15;
+  }
+  #container .containerImage {
+    width: 40vw;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-image: url("../assets/david-kovalenko-Spp6xNPcsgc-unsplash.jpg");
+    background-size: cover;
+    overflow: hidden;
+  }
+  #container .containerImage img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  #containerSignUp {
+    position: relative;
+  }
+  #containerSignUp .containerForm {
+    width: 60vw;
+    height: 100vh;
+    background: linear-gradient(180deg, rgba(184, 132, 132, 0.15) 42.22%, rgba(255, 194, 194, 0.114) 100%);
+  }
+  #containerSignUp .containerForm .title {
+    font-family: "Aclonica", Arial, Helvetica, sans-serif;
+    font-size: 2.5rem;
+    text-align: center;
+    padding-top: 8%;
+    letter-spacing: 5px;
+  }
+  #containerSignUp .containerForm .divIcon {
+    height: 3rem;
+    margin-top: 3%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  #containerSignUp .containerForm .divIcon i {
+    cursor: pointer;
+    font-size: 25px;
+    color: #982B15;
+  }
+  #containerSignUp .containerForm .containerOr {
+    padding-top: 3%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  #containerSignUp .containerForm .containerOr hr {
+    color: black;
+    width: 35%;
+    margin-right: 5px;
+    margin-left: 5px;
+  }
+  #containerSignUp .containerForm .containerOr span {
+    font-family: "Aclonica", Arial, Helvetica, sans-serif;
+  }
+  #containerSignUp .containerForm .containerInput {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5%;
+  }
+  #containerSignUp .containerForm .containerInput input {
+    border: none;
+    height: 2.5rem;
+    width: 70%;
+    background: linear-gradient(180deg, rgba(233, 163, 148, 0.45) 0%, rgba(247, 171, 156, 0.315) 8.51%, rgba(225, 166, 154, 0.41) 100%);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 5px;
+    padding-left: 10px;
+    margin-bottom: 5%;
+  }
+  #containerSignUp .containerForm .containerInput input:nth-child(3) {
+    margin-bottom: 0%;
+  }
+  #containerSignUp .containerForm .containerInput input:focus {
+    border-color: #982B15;
+  }
+  #containerSignUp .containerForm .containerInput .check {
+    margin-top: 2%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: baseline;
+    width: 40%;
+    margin-left: -30%;
+  }
+  #containerSignUp .containerForm .containerInput .check .checkbox {
+    width: 6%;
+    height: 6%;
+  }
+  #containerSignUp .containerForm .containerInput .check .terminos {
+    text-decoration: none;
+    margin-left: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgba(0, 0, 0, 0.4);
+    font-size: 1rem;
+  }
+  #containerSignUp .containerForm .containerInput .btn-login {
+    margin-top: 2%;
+    padding: 1% 5%;
+    border: none;
+    background: linear-gradient(180deg, #982B15 0%, rgba(152, 43, 21, 0.74) 85.94%, rgba(152, 43, 21, 0.83) 100%);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 24px;
+  }
+  #containerSignUp .containerForm .containerInput .btn-login a {
+    color: whitesmoke;
+    font-family: "Acme", Arial, Helvetica, sans-serif;
+    letter-spacing: 5px;
+    font-size: 1.2rem;
+    text-decoration: none;
+  }
+  #containerSignUp .containerForm .containerInput .SignIn {
+    margin-top: 3%;
+    text-decoration: none;
+    font-family: "Acme", Arial, Helvetica, sans-serif;
+    letter-spacing: 5px;
+    font-size: 1rem;
+    color: rgba(0, 0, 0, 0.4);
+  }
+  #containerSignUp .containerForm .containerInput .SignIn:hover {
+    color: #982B15;
+  }
+  #containerSignUp .containerImage {
+    width: 40vw;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-image: url("../assets/evan-leith-8ZmwIbjOa9o-unsplash.jpg");
+    background-size: cover;
+    overflow: hidden;
+  }
+  #containerSignUp .containerImage img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
